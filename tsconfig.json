@@ -3,8 +3,11 @@
     "plugins": [{ "name": "typescript-tslint-plugin" }],
     "baseUrl": ".",
     "paths": {
+      "@Controller/*": ["routes/controllers/*"],
+      "@Middleware/*": ["routes/middleware/*"],
+      "@Model/*": ["database/models/*"],
       "@Lib/*": ["lib/*"],
-      "@Model/*": ["database/models/*"]
+      "@Database/*": ["database/*"]
     },
     "lib": ["esnext"],
     "target": "esnext",
@@ -17,5 +20,5 @@
     "pretty": true // Error message pretty,,
   },
   "compileOnSave": true,
-  "exclude": ["node_modules"]
+  "exclude": ["node_modules", "config"]
 }

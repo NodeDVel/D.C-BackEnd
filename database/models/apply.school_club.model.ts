@@ -1,5 +1,6 @@
 import {
   AllowNull,
+  AutoIncrement,
   Column,
   CreatedAt,
   DataType,
@@ -14,8 +15,9 @@ import {
 })
 export default class Apply extends Model<Apply> {
   @PrimaryKey
+  @AutoIncrement
   @AllowNull(false)
-  @Column(DataType.UUID)
+  @Column(DataType.INTEGER)
   public pk: string;
 
   @AllowNull(false)
