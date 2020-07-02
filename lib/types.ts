@@ -14,3 +14,11 @@ export enum ErrorNames {
   Not_Found_Board = 'Not_Found_Board',
   Not_Found_Comment = 'Not_Found_Comment',
 }
+
+export type Field = 
+  | 'Hacking'
+  | 'Web FrontEnd Development'
+  | 'Web BackEnd Develpment'
+  | 'Android Development'
+  | 'Desingner'
+;
