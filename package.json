@@ -24,7 +24,7 @@
     "morgan": "^1.10.0",
     "mysql2": "^2.1.0",
     "nodemon": "^2.0.4",
-    "sequelize": "^5.21.12",
+    "sequelize": "^6.28.2",
     "tsconfig-paths": "^3.9.0"
   },
   "devDependencies": {
